@@ -22,7 +22,7 @@ sidebar:
         - icon: fab fa-qq
           url: /about/qq
         - icon: fab fa-weixin
-          url: weixin:1609762425
+          url: /about/weixin
         - icon: fas fa-envelope
           url: mailto:1609762425@qq.com
         - icon: fab fa-github
@@ -55,7 +55,7 @@ site_footer:
     - icon: fab fa-qq
       url: /about/qq
     - icon: fab fa-weixin
-      url: weixin:1609762425
+      url: /about/weixin
     - icon: fas fa-envelope
       url: mailto:1609762425@qq.com
     - icon: fab fa-github
