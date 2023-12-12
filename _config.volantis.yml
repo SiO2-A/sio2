@@ -7,7 +7,7 @@ navbar:
       icon: fa-solid fa-rss
       url: /
 sidebar:
-  for_page: [blogger]
+  for_page: [blogger, category, tagcloud]
   widget_library:
     blogger:
       class: blogger
@@ -27,6 +27,25 @@ sidebar:
           url: mailto:1609762425@qq.com
         - icon: fab fa-github
           url: https://github.com/SiO2-A
+    category:
+      class: category
+      display: [desktop] # [desktop, mobile]
+      header:
+        icon: fas fa-folder-open
+        title: 文章分类
+        url: /blog/categories/
+    tagcloud:
+      class: tagcloud
+      display: [desktop, mobile] # [desktop, mobile]
+      header:
+        icon: fas fa-tags
+        title: 热门标签
+        url: /blog/tags/
+      min_font: 14
+      max_font: 24
+      color: true
+      start_color: '#999'
+      end_color: '#555'
 custom_css:
   max_width: 1080px # Sum of body width and sidebar width
   font_smoothing: true # font-smoothing for webkit
