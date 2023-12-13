@@ -42,10 +42,10 @@ custom_css:
 cover:
   # height_scheme: full # full, half
   title: 'SiO2-A'
-  subtitle: '随便写写，什么东西都有'
+  subtitle: '刚建的网站😊'
   background: https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/033.webp
   features:
-    - name: 博客
+    - name: 主页
       img: volantis-static/media/twemoji/assets/svg/1f4f0.svg
       url: /
 site_footer:
