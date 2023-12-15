@@ -6,6 +6,9 @@ navbar:
     - name: SiO2
       icon: fa-solid fa-rss
       url: /
+    - name: 暗黑模式 # 可自定义
+      icon: fas fa-moon # 可自定义
+      toggle: darkmode
 sidebar:
   for_page: [blogger, category, tagcloud]
   widget_library:
@@ -63,6 +66,12 @@ cover:
   title: 'SiO2-A'
   subtitle: '随便写写，什么东西都有'
   background: https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/033.webp
+  height_scheme: full
+  scheme: dock
+  display:
+    home: true
+    archive: true
+    others: false
   features:
     - name: 博客
       img: volantis-static/media/twemoji/assets/svg/1f4f0.svg
@@ -82,3 +91,14 @@ site_footer:
   copyright: '[Copyright © 2019-2024 sio2.live](/)'
   # You can add your own property here. (Support markdown, for example: br: '<br>')
   br: '<br>'
+#########评论#########
+comments:
+  subtitle:
+  service:
+
+search:
+  enable: true
+  service: hexo
+plugins:
+  darkmode:
+    enable: true
