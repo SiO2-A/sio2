@@ -39,10 +39,25 @@ custom_css:
     zoom-out: volantis-static/media/cursor/zoom-out.png # https://gcore.jsdelivr.net/gh/inkss/common@1/cursor/zoom-out.png
     zoom-in: volantis-static/media/cursor/zoom-in.png # https://gcore.jsdelivr.net/gh/inkss/common@1/cursor/zoom-in.png
     grab: volantis-static/media/cursor/openhand.png # https://gcore.jsdelivr.net/gh/inkss/common@1/cursor/openhand.png
+  fontfamily:
+    logofont:
+      fontfamily: '"Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
+      name: 'Varela Round'
+      url: volantis-static/media/fonts/VarelaRound/VarelaRound-Regular.ttf
+      weight: normal
+      style: normal
+    bodyfont:
+      fontfamily: 'UbuntuMono, "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial'
+      name: 'UbuntuMono'
+      url: volantis-static/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf
+      weight: normal
+      style: normal
+    codefont:
+      fontfamily: 'Menlo, UbuntuMono, Monaco'
 cover:
   # height_scheme: full # full, half
   title: 'SiO2-A'
-  subtitle: '刚建的网站😊'
+  subtitle: '一个不断学习的过程😊'
   background: https://unpkg.com/volantis-static@0.0.1660614606622/media/wallpaper/minimalist/2020/033.webp
   features:
     - name: 主页
@@ -63,3 +78,25 @@ site_footer:
   copyright: '[Copyright © 2019-2024 sio2.live](/)'
   # You can add your own property here. (Support markdown, for example: br: '<br>')
   br: '<br>'
+# 本地静态文件使用 CDN 加速
+# 默认使用 https://unpkg.com/hexo-theme-volantis@<%- theme.info.theme_version %>/source/js/*.js ，注意版本号对应关系！！可以通过修改以下配置项覆盖
+# 开发者注意 cdn.enable 设置为 false
+cdn:
+  enable: true
+  # CDN 前缀，为空使用默认值，链接最后不加 "/",
+  # 例如： https://gcore.jsdelivr.net/gh/volantis-x/volantis-x.github.io@gh-page 填写最后编译生成的源码CDN地址前缀，此路径下应该含有/js与/css目录,
+  # 该配置默认值是："https://unpkg.com/hexo-theme-volantis@"+ theme.info.theme_version +"/source"
+  prefix: #https://unpkg.com/hexo-theme-volantis/source
+  # 以下配置可以覆盖 cdn.prefix,配置项的值可以为空，但是要使用CDN必须依据路径填写配置项的键
+  set:
+    js:
+      app: /js/app.js
+    css:
+      style: /css/style.css # (异步加载样式)
+# 静态资源版本控制
+# 本地文件使用文件内容的hash值作为版本号(app.8c1e7c88.js)  其他为时间戳 (?time=1648684470140)
+# 建议静态资源设置标头浏览器缓存一年边缘缓存一个月 cache-control: max-age=86400, s-maxage=31536000 如果有更新记得刷新缓存
+cdn_version: true
+# volantis static 静态资源文件 npm 包 CDN 地址 (后面加 "/" )
+# https://github.com/volantis-x/volantis-static
+volantis_static_cdn: http://120.26.15.146/s/static/
