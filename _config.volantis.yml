@@ -88,7 +88,7 @@ site_footer:
       url: mailto:1609762425@qq.com
     - icon: fab fa-github
       url: https://github.com/SiO2-A
-  copyright: '[Copyright © 2019-2024 sio2.live](/)'
+  copyright: '[Copyright © 2019-2024 sio2.live](/) [京ICP备2023039296号](https://beian.miit.gov.cn/)'
   # You can add your own property here. (Support markdown, for example: br: '<br>')
   br: '<br>'
 #########评论#########
@@ -124,4 +124,4 @@ cdn:
 cdn_version: true
 # volantis static 静态资源文件 npm 包 CDN 地址 (后面加 "/" )
 # https://github.com/volantis-x/volantis-static
-volantis_static_cdn: http://120.26.15.146/s/static/
+volantis_static_cdn: https://sio2.live/s/static/
