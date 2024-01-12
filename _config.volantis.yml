@@ -3,9 +3,18 @@ navbar:
   logo: # choose [img] or [icon + title]
     img: /img/sio2.png # https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
   menu:
-    - name: SiO2
-      icon: fa-solid fa-rss
+    - name: 主页
+      icon: fa-solid fa-splotch
       url: /
+    - name: 思考
+      icon: fa-solid fa-book
+      url: /categories/思考/
+    - name: 技术
+      icon: fa-solid fa-code
+      url: /categories/技术/
+    - name: 日常
+      icon: fa-solid fa-sun
+      url: /categories/日常/
     - name: 暗黑模式 # 可自定义
       icon: fas fa-moon # 可自定义
       toggle: darkmode
@@ -73,9 +82,18 @@ cover:
     archive: true
     others: false
   features:
-    - name: 博客
-      img: volantis-static/media/twemoji/assets/svg/1f4f0.svg
+    - name: 主页
+      icon: fa-solid fa-splotch
       url: /
+    - name: 思考
+      icon: fa-solid fa-book
+      url: /categories/思考/
+    - name: 技术
+      icon: fa-solid fa-code
+      url: /categories/技术/
+    - name: 日常
+      icon: fa-solid fa-sun
+      url: /categories/日常/
 site_footer:
   # layout of footer: [aplayer, social, license, info, copyright]
   layout: [social, license, copyright]
@@ -102,6 +120,8 @@ search:
 plugins:
   darkmode:
     enable: true
+  lazyload:
+    enable: false
 
 # 本地静态文件使用 CDN 加速
 # 默认使用 https://unpkg.com/hexo-theme-volantis@<%- theme.info.theme_version %>/source/js/*.js ，注意版本号对应关系！！可以通过修改以下配置项覆盖
