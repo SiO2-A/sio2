@@ -107,6 +107,9 @@ deploy:
   repo: git@120.26.15.146:/home/git/blog.git
   branch: master
 
+inject:
+  foot: /source/_data/footer.ejs
+
 jsonContent:
   meta: true
   drafts: false
